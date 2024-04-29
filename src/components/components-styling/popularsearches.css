@@ -1,0 +1,32 @@
+
+.motor-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 500px;
+}
+
+.motor-card{
+    text-decoration: none;
+    text-align: left;
+    padding-left: 30px;
+    cursor: pointer;
+    margin-inline: 50px;
+    width: 240px;
+    height: 175px;
+    background-color: rgba(233, 206, 255, 0.5);
+    border: 1px solid #000000;
+    border-radius: 20px;
+    box-shadow: -1px 4px 5px 0px rgba(0,0,0,0.2);
+
+}
+    
+
+
+.motor-card:nth-child(2){
+    background-color: rgba(206, 219, 255, 0.5);
+}
+
+.motor-card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

@@ -1,0 +1,96 @@
+
+body {
+    padding:0 10px 0 10px;
+    overflow-x: hidden;
+    
+}
+
+/* Navbar CSS */
+
+.secondaryHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ffff;
+    
+    padding: 5px 10px 5px 40px;
+    width: 100%;
+    height: 55px;
+
+}
+
+.logo-container{
+   left: -500px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 20px;
+}
+
+.logo-container a{
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(57, 57, 57);
+}
+
+.ri-car-fill{
+    font-size: 40px;
+}
+
+.headerNav {
+    top: 30px;
+    left: -50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.headerNav a {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(57, 57, 57);
+    text-decoration: none;
+    margin: 0 25px 0 0;
+    text-align: center;
+}
+
+
+.userIcons {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 430px;
+    top: 20px;
+}
+
+.loginButton {
+    
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: rgb(13, 13, 13);
+    border: none;
+    position: relative;
+    top: 1px;
+    left: -20px;
+    cursor: pointer;
+
+}
+
+
+.loginButton .loginButtonText {
+    font-size: 15px;
+    margin-top: 11px;
+    color: whitesmoke;
+    font-weight: 580;
+}
+
+
+
+
+
+
+/* 1080p Display */

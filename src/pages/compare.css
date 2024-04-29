@@ -1,0 +1,38 @@
+.compare{
+
+    
+    text-align: center;
+    justify-content: center;
+}
+
+
+.compare-dropdown {
+    
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.compare-dropdown-item{
+    text-align: left   ;
+    margin-inline: 50px;
+    width: 20%;
+}
+
+.inputBox{
+   height: 30px;
+   width: 300px;
+   border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #000000;;
+}
+
+.vl {
+    border-left: 1.5px solid rgb(73, 73, 73);
+    height: 500px;
+    
+    left: 50%;
+    margin-left: -3px;
+    margin-top: 75px;
+  }
