@@ -10,16 +10,17 @@ function Compare() {
         const motor = motors.find((m) => m.name === selectedMotorName);
         setSelectedMotors((prevSelectedMotors) => {
             const updatedSelectedMotors = [...prevSelectedMotors];
-            updatedSelectedMotors[index] = motor;
+            updatedSelectedMotors[index] = motor || null; // Ensure motor is not undefined
             return updatedSelectedMotors;
         });
     };
+    
 
     return (
         <div className="compare">
             <div className="compare-title">
                 <h1 style={{ fontSize: '50px' }}>Compare</h1>
-                <p style={{ fontSize: '25px' }}>Compare up to two motors at a time!</p>
+                <p style={{ fontSize: '25px', marginTop:'-20px' }}>Compare up to two motors at a time!</p>
             </div>
             <div className="compare-dropdown">
                 <div className="compare-dropdown-item">
@@ -33,12 +34,13 @@ function Compare() {
                         <div>
                             <h2>{selectedMotors[0].name}</h2>
                             <img src={selectedMotors[0].image} alt={selectedMotors[0].name} style={{ width: '200px', height: '150px' }} />
-                            <p>Manufacturer: {selectedMotors[0].manufacturer}</p>
-                            <p>Production: {selectedMotors[0].production}</p>
-                            <p>Cars: {selectedMotors[0].cars.join(', ')}</p>x
-                            <p>Horsepower and Torque: {selectedMotors[0].horsepowertorque}</p>
-                            <p>Configuration: {selectedMotors[0].configuration}</p>
-                            <p>Turbocharger: {selectedMotors[0].turbocharger}</p>
+                            <p><span style={{ fontWeight: 'bold' }}>Manufacturer:</span> {selectedMotors[0].manufacturer}</p>
+                            <p><span style={{ fontWeight: 'bold' }}>Production:</span> {selectedMotors[0].production}</p>
+                            <p><span style={{ fontWeight: 'bold' }}>Cars:</span> {selectedMotors[0].cars ? selectedMotors[0].cars.join(', ') : 'No cars found'}</p>
+                            <p><span style={{ fontWeight: 'bold' }}>Horsepower and Torque:</span> {selectedMotors[0].horsepowertorque}</p>
+                            <p><span style={{ fontWeight: 'bold' }}>Configuration:</span> {selectedMotors[0].configuration}</p>
+                            <p><span style={{ fontWeight: 'bold' }}>Turbocharger:</span> {selectedMotors[0].turbocharger}</p>
+
                         </div>
                     )}
                 </div>
@@ -57,12 +59,11 @@ function Compare() {
                         <div>
                             <h2>{selectedMotors[1].name}</h2>
                             <img src={selectedMotors[1].image} alt={selectedMotors[1].name} style={{ width: '200px', height: '150px' }} />
-                            <p>Manufacturer: {selectedMotors[1].manufacturer}</p>
-                            <p>Production: {selectedMotors[1].production}</p>
-                            <p>Cars: {selectedMotors[1].cars.join(', ')}</p>
-                            <p>Horsepower and Torque: {selectedMotors[1].horsepowertorque}</p>
-                            <p>Configuration: {selectedMotors[1].configuration}</p>
-                            <p>Turbocharger: {selectedMotors[1].turbocharger}</p>
+                            <p><span style={{ fontWeight: 'bold' }}>Production:</span> {selectedMotors[1].production}</p>
+                            <p><span style={{ fontWeight: 'bold' }}>Cars:</span> {selectedMotors[1].cars ? selectedMotors[0].cars.join(', ') : 'No cars found'}</p>
+                            <p><span style={{ fontWeight: 'bold' }}>Horsepower and Torque:</span> {selectedMotors[1].horsepowertorque}</p>
+                            <p><span style={{ fontWeight: 'bold' }}>Configuration:</span> {selectedMotors[1].configuration}</p>
+                            <p><span style={{ fontWeight: 'bold' }}>Turbocharger:</span> {selectedMotors[1].turbocharger}</p>
                         </div>
                     )}
                 </div>

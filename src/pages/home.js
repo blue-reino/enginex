@@ -1,4 +1,5 @@
 import './home.css';
+import {Link, useMatch, useResolvedPath} from "react-router-dom";
 import PopularMotors from '../components/popularsearches';
 
 import React, { useEffect, useState } from 'react';
@@ -73,7 +74,7 @@ function Home() {
                             <button className="searchButton"><i className="ri-search-line"></i></button>
                         </label>
                     </div>
-                    <p style={{ fontSize: '20px', textAlign: 'center' }}>Or <button className="searchExploreBtn">Explore </button></p>
+                    <p style={{ fontSize: '20px', textAlign: 'center' }}>Or <CustomLink to="/Explore" className="searchExploreBtn">Explore </CustomLink></p>
                 </div>
     
                 <hr/>
@@ -110,5 +111,14 @@ function Home() {
 
    
 }
+
+function CustomLink({to, children,  ...props}) {
+    const resolvedPath = useResolvedPath(to);
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+    return (
+      <Link className = {isActive ? "active" : ""} to={to} {...props}>{children}</Link>
+    )
+  }
+
 
 export default Home;

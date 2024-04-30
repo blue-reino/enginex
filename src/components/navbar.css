@@ -89,6 +89,15 @@ body {
 }
 
 
+.loginButton:hover {
+    transition: all 0.2s ease;
+    background-color: slateblue;
+}   
+
+.headerNav a.active {
+
+    color: rgba(0, 0, 0, 0.5);
+  }
 
 
 

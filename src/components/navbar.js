@@ -15,9 +15,9 @@ const Navbar = () => {
 
         <div className="headerNav">
             <CustomLink to='/'>Home</CustomLink>
-            <Link to='#'>Explore</Link>
+            <CustomLink to='/Explore'>Explore</CustomLink>
             <CustomLink to='/compare'>Compare</CustomLink>
-            <Link to='#'>Search</Link>
+            <CustomLink to='/'>Search</CustomLink>
             <Link to='#'>About</Link>
             
 

@@ -7,7 +7,7 @@ function MotorCard(){
                     <button className="motor-card" key={motor.id}> 
                         
                         <h2 style={{fontSize:"30px"}}>{motor.name}</h2>
-                        <h3 style={{fontSize:"15px"}}>{motor.quickstats.join(' --    ')}</h3>
+                        <h3 style={{fontSize:"15px"}}>{motor.quickstats.join(':    ')}</h3>
                     </button>
             ))}
         </div>
