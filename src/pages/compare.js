@@ -36,7 +36,17 @@ function Compare() {
                             <img src={selectedMotors[0].image} alt={selectedMotors[0].name} style={{ width: '200px', height: '150px' }} />
                             <p><span style={{ fontWeight: 'bold' }}>Manufacturer:</span> {selectedMotors[0].manufacturer}</p>
                             <p><span style={{ fontWeight: 'bold' }}>Production:</span> {selectedMotors[0].production}</p>
-                            <p><span style={{ fontWeight: 'bold' }}>Cars:</span> {selectedMotors[0].cars ? selectedMotors[0].cars.join(', ') : 'No cars found'}</p>
+                            <p><span style={{ fontWeight: 'bold' }}>Cars:</span></p>
+                            <ul>
+                                {selectedMotors[0].cars ? 
+                                    selectedMotors[0].cars.map((car, index) => (
+                                        <li key={index}>{car}</li>
+                                    )) 
+                                    : 
+                                    <li>No cars found</li>
+                                }
+                            </ul>
+
                             <p><span style={{ fontWeight: 'bold' }}>Horsepower and Torque:</span> {selectedMotors[0].horsepowertorque}</p>
                             <p><span style={{ fontWeight: 'bold' }}>Configuration:</span> {selectedMotors[0].configuration}</p>
                             <p><span style={{ fontWeight: 'bold' }}>Turbocharger:</span> {selectedMotors[0].turbocharger}</p>
@@ -59,8 +69,19 @@ function Compare() {
                         <div>
                             <h2>{selectedMotors[1].name}</h2>
                             <img src={selectedMotors[1].image} alt={selectedMotors[1].name} style={{ width: '200px', height: '150px' }} />
+                            <p><span style={{ fontWeight: 'bold' }}>Manufacturer:</span> {selectedMotors[1].manufacturer}</p>
                             <p><span style={{ fontWeight: 'bold' }}>Production:</span> {selectedMotors[1].production}</p>
-                            <p><span style={{ fontWeight: 'bold' }}>Cars:</span> {selectedMotors[1].cars ? selectedMotors[0].cars.join(', ') : 'No cars found'}</p>
+                            <p><span style={{ fontWeight: 'bold' }}>Cars:</span></p>
+                            <ul>
+                                {selectedMotors[1].cars ? 
+                                    selectedMotors[1].cars.map((car, index) => (
+                                        <li key={index}>{car}</li>
+                                    )) 
+                                    : 
+                                    <li>No cars found</li>
+                                }
+                            </ul>
+
                             <p><span style={{ fontWeight: 'bold' }}>Horsepower and Torque:</span> {selectedMotors[1].horsepowertorque}</p>
                             <p><span style={{ fontWeight: 'bold' }}>Configuration:</span> {selectedMotors[1].configuration}</p>
                             <p><span style={{ fontWeight: 'bold' }}>Turbocharger:</span> {selectedMotors[1].turbocharger}</p>
