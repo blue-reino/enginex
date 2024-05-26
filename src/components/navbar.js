@@ -17,7 +17,7 @@ const Navbar = () => {
             <CustomLink to='/'>Home</CustomLink>
             <CustomLink to='/Explore'>Explore</CustomLink>
             <CustomLink to='/compare'>Compare</CustomLink>
-            <CustomLink to='/'>Search</CustomLink>
+            
             <Link to='#'>About</Link>
             
 

@@ -1,6 +1,10 @@
 import motors from "../arrays/popularmotors";
 import './components-styling/popularsearches.css';
 function MotorCard(){
+
+
+
+    
     return(
         <div className="motor-card-container">
             {motors.map(motor => (

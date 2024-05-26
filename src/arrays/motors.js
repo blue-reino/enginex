@@ -7,7 +7,7 @@ import n55 from '../images/n55.jpg'
 
 const motors = [
     {
-        id: 1,
+        id: `1`,
         name: "B58",
         image: b58,
         manufacturer : "BMW",
@@ -45,7 +45,7 @@ const motors = [
         quickstats: ["BMW", "2015-Present"]
     },
     {
-        id: 2,
+        id: `2`,
         name: "S58",
         image: s58,
         manufacturer : "BMW",
@@ -71,7 +71,7 @@ const motors = [
 
     },
     {
-      id: 3,
+      id: `3`,
       name: "N55",
       image: n55,
       manufacturer : "BMW",
@@ -104,22 +104,20 @@ const motors = [
       quickstats: ["BMW", "2009-2019"],
     },
       {
-        id: 4,
+        id: `4`,
         name: "S55",
         image: s55,
         manufacturer: "BMW",
         production: "2014-2021",
         cars: [
-            "F80 M3",
-            "F82 M4",
-            "F83 M4",
+            "F80 M3 / M3 CS",
+            "F82 M4 / M4 CS / M4 GTS",
+            "F83 M4 / M4 CS",
             "F87 M2 Competition",
-            "F82 M4 CS",
-            "F83 M4 CS",
-            "F80 M3 CS",
-            "F82 M4 GTS",
-            "F82 M4 CS",
-            "F83 M4 CS"
+    
+           
+            
+ 
         ],
         horsepowertorque: ["431–500 HP", "299–406 LB-FT"],
         configuration: "Straight-Six",
@@ -127,7 +125,7 @@ const motors = [
         quickstats: ["BMW", "2014-2021"]
     },
     {
-        id: 5,
+        id: `5`,
         name: "B48",
         image: b48,
         manufacturer: "BMW",

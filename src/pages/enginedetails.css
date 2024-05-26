@@ -1,0 +1,22 @@
+
+
+.details-wrapper{
+    
+    margin: 100px 50px;
+    display: grid;
+    grid-template-columns: 0.1fr 0.25fr;
+    justify-content: center;
+    
+}
+
+.details-image-container{
+    margin-top: 25px;
+    margin-right: 100px;
+    
+   
+}
+
+/* .details-image-container.active {
+    
+    position: fixed;
+} */
