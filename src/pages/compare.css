@@ -28,6 +28,12 @@
     margin-left: 100px;
 }
 
+.compare-image{
+    box-shadow: -1px 4px 5px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    
+}
+
 .inputBox{
    height: 30px;
    width: 275px;

@@ -33,7 +33,7 @@ function Compare() {
                     {selectedMotors[0] && (
                         <div>
                             <h2>{selectedMotors[0].name}</h2>
-                            <img src={selectedMotors[0].image} alt={selectedMotors[0].name} style={{ width: '200px', height: '150px' }} />
+                            <img className= "compare-image" src={selectedMotors[0].image} alt={selectedMotors[0].name} style={{ width: '200px', height: '150px' }} />
                             <p><span style={{ fontWeight: 'bold' }}>Manufacturer:</span> {selectedMotors[0].manufacturer}</p>
                             <p><span style={{ fontWeight: 'bold' }}>Production:</span> {selectedMotors[0].production}</p>
                             <p><span style={{ fontWeight: 'bold' }}>Cars:</span></p>
@@ -68,7 +68,7 @@ function Compare() {
                     {selectedMotors[1] && (
                         <div>
                             <h2>{selectedMotors[1].name}</h2>
-                            <img src={selectedMotors[1].image} alt={selectedMotors[1].name} style={{ width: '200px', height: '150px' }} />
+                            <img className= "compare-image" src={selectedMotors[1].image} alt={selectedMotors[1].name} style={{ width: '200px', height: '150px' }} />
                             <p><span style={{ fontWeight: 'bold' }}>Manufacturer:</span> {selectedMotors[1].manufacturer}</p>
                             <p><span style={{ fontWeight: 'bold' }}>Production:</span> {selectedMotors[1].production}</p>
                             <p><span style={{ fontWeight: 'bold' }}>Cars:</span></p>

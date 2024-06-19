@@ -33,7 +33,10 @@ function EngineDetails() {
 
             {/* <div className={image ? 'details-image-container active'  : 'details-image-container'}> */}
             <div className='details-image-container'>
-                <img src={motor.image} alt={motor.name} style={{ width: '500px', height: 'auto', }} />
+                <img className= "container-image" src={motor.image} alt={motor.name} style={{ width: '500px', height: 'auto', borderRadius: '20px' }} />
+                <iframe className="video-player" width="600" height="300" 
+                src={motor.previewclip}>    
+                 </iframe>   
             </div>
 
             <div className="details-container">
@@ -44,19 +47,25 @@ function EngineDetails() {
                 <p><span style={{ fontWeight: 'bold' }}>Horsepower and Torque:</span> {motor.horsepowertorque}</p>
                 <p><span style={{ fontWeight: 'bold' }}>Configuration:</span> {motor.configuration}</p>
                 <p><span style={{ fontWeight: 'bold' }}>Turbocharger:</span> {motor.turbocharger}</p>
+                <p><span style={{ fontWeight: 'bold' }}>Cars:</span></p>
                 
-                 <p><span style={{ fontWeight: 'bold' }}>Cars:</span></p>
-                <ul>
-                    {motor.cars ?
-                        motor.cars.map((car, index) => (
-                            <li key={index}>{car}</li>
-                        ))
-                        :
-                        <li>No cars found</li>
-                    }
-                </ul>
+                
+                    
+                    <ul>
+                        {motor.cars ?
+                            motor.cars.map((car, index) => (
+                                <li key={index}>{car}</li>
+                            ))
+                            :
+                            <li>No cars found</li>
+                        }
+                    </ul>
+
+              
+                
 
             </div>
+
 
    
 
