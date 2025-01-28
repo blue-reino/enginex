@@ -1,6 +1,7 @@
 import './home.css';
 import {Link, useMatch, useResolvedPath} from "react-router-dom";
 import PopularMotors from '../components/popularsearches';
+import SearchBar from '../components/SearchBar';
 
 import React, { useEffect, useState } from 'react';
 
@@ -65,15 +66,13 @@ function Home() {
                 <div className="hero-content">
                     <div className="hero-title">
                         <h1>Empower Your Ride: Discover <span style={{ color: "slateblue" }}>the Heart</span> of Your Car!</h1>
+                        
                         <p>Search our database to uncover insights on any motor.</p>
+                        
                     </div>
     
-                    <div className="hero-search">
-                        <label htmlFor="search-id" className="hero-label">
-                            <input id="search-id" className="searchInput" placeholder={placeholder} />
-                            <button className="searchButton"><i className="ri-search-line"></i></button>
-                        </label>
-                    </div>
+                    <SearchBar />
+                    
                     <p style={{ fontSize: '20px', textAlign: 'center' }}>Or <CustomLink to="/Explore" className="searchExploreBtn">Explore </CustomLink></p>
                 </div>
     

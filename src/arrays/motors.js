@@ -3,7 +3,7 @@ import b58 from '../images/b58.jpg'
 import s55 from '../images/s55.jpg'
 import s58 from '../images/s58.jpg'
 import n55 from '../images/n55.jpg'
-
+import s62 from '../images/s62.jpg'
 
 const motors = [
     {
@@ -205,6 +205,24 @@ const motors = [
         configuration: "Inline-Four",
         turbocharger: "Single twin-scroll turbocharger",
         quickstats: ["BMW", "2014-Present"]
+    },
+    {
+        id: `6`,
+        name: "S62",
+        image: s62,
+        manufacturer: "BMW",
+        production: "1998–2003",
+        previewclip: "https://www.youtube.com/embed/xJcId-ZkIg0?si=SfIxLpB7LhwxoLoF",
+        cars: [
+            "E39 M5",
+            "E52 Z8 (2000-2003)",
+            "Ascari KZ1",
+            "Acari A10"
+        ],
+        horsepowertorque: ["394–625 HP", "369–443 LB-FT"],
+        configuration: "90° V8",
+        turbocharger: "Naturally Aspirated",
+        quickstats: ["BMW", "1998–2003"]
     }
     
 

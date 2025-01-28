@@ -20,7 +20,7 @@ function Compare() {
         <div className="compare">
             <div className="compare-title">
                 <h1 style={{ fontSize: '50px' }}>Compare</h1>
-                <p style={{ fontSize: '25px', marginTop:'-20px' }}>Compare up to two motors at a time!</p>
+                <p style={{ fontSize: '25px', marginTop:'-20px' }}>Compare two motors at a time!</p>
             </div>
             <div className="compare-dropdown">
                 <div className="compare-dropdown-item">
